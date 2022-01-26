@@ -1,0 +1,4 @@
+{
+  "name": "@volkswagen-onehub/dcc-release",
+  "description": "A semi-automated script for releasing DCC applications"
+}
