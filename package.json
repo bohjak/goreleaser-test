@@ -1,7 +1,6 @@
 {
   "name": "@jamesbohacek/goreleaser-test",
   "version": "0.1.2",
-  "private": true,
   "description": "A semi-automated script for releasing DCC applications",
   "repository": "https://github.com/jamesbohacek/goreleaser-test",
   "scripts": {
