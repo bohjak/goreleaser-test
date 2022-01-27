@@ -1,5 +1,22 @@
 {
-  "name": "@volkswagen-onehub/dcc-release",
+  "name": "@jamesbohacek/goreleaser-test",
+  "version": "0.1.2",
+  "private": true,
   "description": "A semi-automated script for releasing DCC applications",
-  "version": "0.1.1"
+  "repository": "https://github.com/jamesbohacek/goreleaser-test",
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "dependencies": {
+    "go-npm": "^0.1.9"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "goBinary": {
+    "name": "goreleaser-test",
+    "path": "./bin",
+    "url": "https://github.com/jamesbohacek/goreleaser-test/releases/download/v{{version}}/goreleaser-test_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  }
 }
